@@ -5,11 +5,15 @@ const errorMsg= document.querySelector("#error-message")
 const noOfNotes = document.querySelectorAll(".number-of-notes")
 const availNotes=[2000,500,100,50,20,10,1]
 
+
+
 checkBtn.addEventListener("click",function validate(){
     hideMessage();
-   if(billAmount.value>0){
-       if(cashGiven.value >= billAmount.value){
-           const amountToBeReturned = cashGiven.value-billAmount.value
+    var billAm = Number(billAmount.value)
+    var cashGi = Number(cashGiven.value)
+   if(billAm>0){
+       if(cashGi >=billAm){
+        const amountToBeReturned =cashGi-billAm
            calculateChange(amountToBeReturned)
            }
        else{
