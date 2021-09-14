@@ -1,9 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    margin-top: 12%;
+    background-color: #8ECD7D;
+    font-family: 'Open Sans', sans-serif;
+}
+
+label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+caption{
+    padding-bottom:20px ;
+    font-weight: bold;
+}
+
+.heading{
+    margin-bottom: 5%;
+    font-size: 350%;
+}
+.description{
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+    display: list-item;
+    list-style-type:disc;
+}
+
+#error-message{
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
 
 .container{
     display: flex;
@@ -18,14 +50,23 @@ input{
     padding: 4px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 1.2rem;
+
+}
+button:hover{
+    background-color: #009AB0; /* Green */
+  color: black;
 }
 button{
-    width: 100px;
+    width: 7rem;
     padding: 1rem;
+    border-radius: 5px;
     margin-bottom: 20px;
+    font-size: 1.1rem;
 }
 table,th,td{
     border: 1px solid black;
+    font-size: 150%;
    
 }
 td{
