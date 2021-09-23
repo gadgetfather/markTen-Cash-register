@@ -26,7 +26,7 @@ cashGiven.onkeydown = function(e) {
 
 nextBtn.addEventListener("click",function show()
 {   if(billAmount.value==""){
-    errorMsg.textContent= "enter the value"
+    errorMsg.textContent= "Enter the value"
 }
     else{
     document.querySelector('.showlabel').style.display= 'block';
