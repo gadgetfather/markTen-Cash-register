@@ -1,9 +1,39 @@
 const billAmount = document.querySelector("#bill-amount")
 const cashGiven = document.querySelector("#cash-given")
+const nextBtn = document.querySelector("#next-btn")
 const checkBtn = document.querySelector("#check-btn")
 const errorMsg= document.querySelector("#error-message")
 const noOfNotes = document.querySelectorAll(".number-of-notes")
 const availNotes=[2000,500,100,50,20,10,5,1]
+
+//to prevent negative value 
+billAmount.onkeydown = function(e) {
+    if(!((e.keyCode > 95 && e.keyCode < 106)
+      || (e.keyCode > 47 && e.keyCode < 58) 
+      || e.keyCode == 8)) {
+        return false;
+    }
+}
+// to prevent negative value
+cashGiven.onkeydown = function(e) {
+    if(!((e.keyCode > 95 && e.keyCode < 106)
+      || (e.keyCode > 47 && e.keyCode < 58) 
+      || e.keyCode == 8)) {
+        return false;
+    }
+}
+
+
+nextBtn.addEventListener("click",function show()
+{   if(billAmount.value==""){
+    errorMsg.textContent= "enter the value"
+}
+    else{
+    document.querySelector('.showlabel').style.display= 'block';
+    document.querySelector('.showinp').style.display= 'block';
+    document.querySelector('.showbtn').style.display= 'block';}
+})
+
 
 
 

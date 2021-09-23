@@ -76,3 +76,13 @@ td{
 table{
     width: 80%;
 }
+
+.showinp{
+    display: none;
+}
+.showbtn{
+    display: none;
+}
+.showlabel{
+    display: none;
+}
